@@ -68,9 +68,9 @@ spec:
               workingDir: $(workspaces.source.path)
               script: |
                 echo "Hello Everyone"
-                sleep 1200
+                sleep 20
                 echo "Done sleeping"
-                exit 1
+                exit 0
   workspaces:
   - name: source
     volumeClaimTemplate:
