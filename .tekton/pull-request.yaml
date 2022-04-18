@@ -40,7 +40,7 @@ spec:
       - name: fetch-repository
         taskRef:
           name: git-c
-          kind: Task
+          kind: ClusterTask
         workspaces:
           - name: output
             workspace: source
