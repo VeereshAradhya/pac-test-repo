@@ -40,7 +40,8 @@ spec:
     tasks:
       - name: fetch-repository
         taskRef:
-          name: git-clone
+          name: git-clone-1-7-0
+          kind: ClusterTask
         workspaces:
           - name: output
             workspace: source
@@ -69,7 +70,7 @@ spec:
               workingDir: $(workspaces.source.path)
               script: |
                 echo "Hello Everyone"
-                sleep 1200
+                sleep 10
                 echo "Done sleeping"
                 exit 0
   workspaces:
