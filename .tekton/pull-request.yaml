@@ -67,7 +67,10 @@ spec:
               image: registry.access.redhat.com/ubi8/ubi-micro:8.4
               workingDir: $(workspaces.source.path)
               script: |
-                exit 0
+                echo "Hello Everyone"
+                sleep 1200
+                echo "Done sleeping"
+                exit 1
   workspaces:
   - name: source
     volumeClaimTemplate:
